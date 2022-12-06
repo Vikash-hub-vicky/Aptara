@@ -23,13 +23,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 public class WebDriverUtility {
+	
 	/**
 	 * It will wait for 20 seconds till the element load in DOM
 	 * @param driver
 	 */
-	//public void waitForPageLoad(WebDriver driver) {
-		//driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	//}
+	public void waitForPageLoad(WebDriver driver) {
+	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	}
+	
 	/**
 	 * This method will wait till element to be visible
 	 * @param driver
@@ -39,6 +41,7 @@ public class WebDriverUtility {
 		WebDriverWait wait = new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
+	
 	/**
 	 * This method will wait till element to be clickable
 	 * @param driver
@@ -194,7 +197,7 @@ public class WebDriverUtility {
 	 * @return
 	 */
 	public String screenShot(WebDriver driver, String testCaseName) {
-		JavaUtility jUtil = new JavaUtility();
+		 JavaUtility jUtil = new JavaUtility();
 		 String filePath = "./errorshot"+testCaseName+jUtil.systemDateAndTime()+".png";//wrong
 		 TakesScreenshot ts = (TakesScreenshot)(driver);
 		 File source =ts.getScreenshotAs(OutputType.FILE);

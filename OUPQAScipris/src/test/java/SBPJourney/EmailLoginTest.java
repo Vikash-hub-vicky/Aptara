@@ -19,7 +19,7 @@ public class EmailLoginTest extends BaseClass {
 		
 	}
 	@BeforeMethod
-	public void setUp() {
+	 public void setUp() {
 		intilization();
 		EmailLoginPage = new EmailLoginPage(driver);
 		
@@ -40,8 +40,8 @@ public class EmailLoginTest extends BaseClass {
 	
 	@AfterMethod
 	public void tearDown() {
-	 //driver.quit();
-	}
+	driver.quit();
+	} 
 	
 	}
 

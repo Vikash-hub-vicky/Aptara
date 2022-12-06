@@ -19,10 +19,10 @@ public class EmailAccessPageTest extends BaseClass {
 		
 	}
 	@BeforeMethod
-	public void setUp() {
+	 public void setUp() {
 		intilization();
 		EmailLoginPage = new EmailLoginPage(driver);
-		EmailAccessPage=EmailLoginPage.EmailLoginPage(prop.getProperty("username"), prop.getProperty("password"));
+		EmailAccessPage = EmailLoginPage.EmailLoginPage(prop.getProperty("username"), prop.getProperty("password"));
 		
 	}
 	

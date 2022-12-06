@@ -27,7 +27,7 @@ public class LicenseSelectionPage{
 	@FindBy(xpath="//img[@class='mCS_img_loaded']")
 	private WebElement logoImg;
 	
-	@FindBy(xpath="//div[@class=\"line-text-div\" and contains(text(),'I want to opt out of using the available open access agreement')]")
+	@FindBy(xpath="//div[@class='line-text-div' and contains(text(),'I want to opt out of using the available open access agreement')]")
 	private WebElement optOutLink;
 	
 	@FindBy(xpath="//button[text()='Read License Terms']")

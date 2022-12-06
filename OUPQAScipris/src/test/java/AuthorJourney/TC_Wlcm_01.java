@@ -22,6 +22,9 @@ public class TC_Wlcm_01 {
 		driver.findElement(By.xpath("//div[text()='[OUPQA]- Please select a license for article ART-VK/16/11/8']/ancestor::div[@id='script:272']")).click();
 		driver.switchTo().frame("MsgBody");
 		driver.findElement(By.xpath("//a[contains(text(),'Select a license')]")).click();
+		driver.findElement(By.xpath("//p[text()='WF2 GEA1']"));
+		driver.findElement(By.id("//button[@id='btnContinue1']"));
+		driver.findElement(By.className("//button[@class='btn btn-primary m-t-10']"));
 		//String ActualTitle = driver.getTitle();
 		
 //      String exp_title = "WF2 GEA1";

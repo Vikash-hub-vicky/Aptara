@@ -6,6 +6,7 @@ package GenericUtility;
  */
 
 public interface IPathConstants {
+	
 	String PROPERTY_FILEPATH ="C:\\Users\\A8568\\eclipse-workspace\\OUPQAScipris\\src\\main\\java\\Configuration\\config.properties";
 	String EXCEL_FILEPATH ="C:\\Users\\A8568\\eclipse-workspace\\OUPQAScipris\\src\\main\\resources\\AptaraTestData.xlsx";
 	

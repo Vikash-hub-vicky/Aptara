@@ -48,7 +48,7 @@ public class BaseClass {
     	  String browserName = prop.getProperty("browser");
     	  if(browserName.equals("chrome"))
     	  {
-    		  System.setProperty(IPathConstants.CHROME_KEY, IPathConstants.CHROME_PATH	);;
+    		  System.setProperty(IPathConstants.CHROME_KEY, IPathConstants.CHROME_PATH	);
     		  driver = new ChromeDriver();
     	  }
     	  else if(browserName.equals("Firefox"))
